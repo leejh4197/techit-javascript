@@ -10,4 +10,7 @@ $("#drone").click(() => {
     $("#hp").text("HP : " + hp);
   });
   $("#spit").css({ left: " 150px" });
+  if (hp === 0) {
+    $("#bunker").fadeOut();
+  }
 });
